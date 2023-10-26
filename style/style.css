@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playpen Sans', cursive;
+}
+
+body {
+    position: relative;
+    background-color: rgb(27, 27, 27);
+}
+
+.container {
+    width: 95%;
+    margin: 6rem auto;
+    padding: 10px;
+    background-color: gold;
+    border-radius: 15px;
+    box-shadow: 0 0 2rem rgba(255, 217, 0, 0.5);
+
+}
+
+.search-content {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+
+#search-character {
+    width: 70%;
+    padding: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+#search-character:focus {
+    outline: none;
+}
+
+#btn-submit {
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#name {
+    display: block;
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#image-display {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 9px;
+}
+
+#image {
+    width: 100%;
+}
+
+.character-about {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        width: 400px;
+        margin: 4.5rem auto;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    #btn-submit {
+        cursor: pointer;
+        transition: .3s ease-in-out;
+    }
+
+    #btn-submit:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .character-about {
+        padding-left: 2.5rem;
+    }
+}
